@@ -52,7 +52,7 @@ public class AddImage extends HttpServlet {
 		String imageFileName=file.getSubmittedFileName();     //get selected image file name
 		System.out.println("Selected Image File Name : "+imageFileName);
 		
-		String uploadPath="C:/Users/Dell 11/eclipse-workspace/PROJECTBLOOD/images/"+imageFileName; //upload path where we have to upload our actual image
+		String uploadPath="C:/Users/Dell 11/eclipse-workspace/PROJECTBLOOD/WebContent/images/"+imageFileName; //upload path where we have to upload our actual image
 		System.out.println("Upload Path : "+uploadPath);
 		
 		//Uploading our selected images into image folder

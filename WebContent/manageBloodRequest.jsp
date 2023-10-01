@@ -1,6 +1,6 @@
 <%@page import="Project.ConnectionProvider"%>
 <%@page import="java.sql.*"%>
-<%@include file="header.html"%>
+
 <html>
 <head>
 <style>
@@ -34,7 +34,11 @@ background-repeat: no-repeat;
 </style>
 </head>
 <body>
-<br>
+
+	<%@include file="AdminHeader.jsp" %>
+
+<div style="padding-top: 2%;padding-bottom: 22%">
+
 <center>
 <table id="customers">
 <tr>
@@ -55,12 +59,12 @@ try
 	while(rs.next())
 	{
 %>
-<td><%=rs.getString(1) %></td>
-<td><%=rs.getString(2) %></td>
-<td><%=rs.getString(3) %></td>
-<td><%=rs.getString(4) %></td>
-<td><a href="requestForBloodDone.jsp?mobilenumber=<%=rs.getString(2) %>">Done</a></td>
-<td><a href="requestForBloodDelete.jsp?mobilenumber=<%=rs.getString(2) %>">Delete</a></td>
+<td style="color: black;"><%=rs.getString(1) %></td>
+<td style="color: black;"><%=rs.getString(2) %></td>
+<td style="color: black;"><%=rs.getString(3) %></td>
+<td style="color: black;"><%=rs.getString(4) %></td>
+<td><a style="color: black;" href="requestForBloodDone.jsp?mobilenumber=<%=rs.getString(2) %>">Done</a></td>
+<td><a style="color: black;" href="requestForBloodDelete.jsp?mobilenumber=<%=rs.getString(2) %>">Delete</a></td>
 </tr>
 <%
 }
@@ -75,10 +79,10 @@ catch(Exception e)
 
 </table>
 </center>
-<br>
-<br>
-<br>
-<br>
-<h3><center style="padding-top:350px; color: white;font-size: 22px">All Right Reserved @Sweta Raj :: 2023  </center></h3>
+
+</div>
+
+	<%@include file="AdminFooter.jsp" %>
+
 </body>
 </html>

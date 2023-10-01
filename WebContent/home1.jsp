@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>User page</title>
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -55,6 +55,8 @@ height: 100vh;
 background-repeat: no-repeat;
 background-size: cover;
 }
+
+
 	</style>
 
 </head>
@@ -71,14 +73,18 @@ background-size: cover;
       <li class="nav-item active">
         <a class="nav-link" href="home1.jsp"><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
       </li>
+      
       <li class="nav-item active">
-        <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i> About Us <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="Gallery.jsp"><i class="fa fa-picture-o" aria-hidden="true"></i> Gallery<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i> Gallery<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="Dashboard.jsp"><i class="fa fa-area-chart" aria-hidden="true"></i> Dashboard <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i> Dashboard <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="SearchBloodBank.jsp"><i class="fa fa-home" aria-hidden="true"></i>Search Blood Bank <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="Sorting.jsp"><i class="fa fa-home" aria-hidden="true"></i>Blood Group <span class="sr-only">(current)</span></a>
       </li>
       
 
@@ -91,7 +97,7 @@ background-size: cover;
     if(user!=null)
     {%>
     	<a href="" class="btn btn-light my-2 my-sm-0 mr-3"data-toggle="modal" data-target="#exampleModal" type="submit"><i class="fa fa-user" aria-hidden="true"></i><%=user.getName() %></a>
-      <a href="Blood.jsp" class="btn btn-light my-2 my-sm-0" type="submit"><i class="fa fa-user-plus" aria-hidden="true"></i> Logout</a>
+      <a href="Blood.jsp" class="btn btn-light my-2 my-sm-0" type="submit"> Logout</a>
       
       
       
@@ -171,6 +177,9 @@ background-size: cover;
 
 <div class="container-fluid " style="background-image: linear-gradient(to right top, #050637, #001261, #00178e, #0019bc, #1214eb);">
 <br>
+
+
+
 <p class="text-center text-white" style="font-size: 25px;">Designed and Developed by Sweta Raj Chaudhary</p>
 <br>
 </div>

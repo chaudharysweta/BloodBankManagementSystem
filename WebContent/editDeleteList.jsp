@@ -1,7 +1,7 @@
 <%@page import="Project.ConnectionProvider" %>
 <%@page import="java.sql.*" %>
 
-<%@include file="header.html"%>
+
 <html>
 <head>
 <style>
@@ -35,7 +35,10 @@ background-repeat: no-repeat;
 </style>
 </head>
 <body >
-<br>
+	<%@include file="AdminHeader.jsp" %>
+
+<div style="padding-top: 2%;padding-bottom: 15%">
+
 <%
 String msg=request.getParameter("msg");
 if("valid".equals(msg))
@@ -92,17 +95,17 @@ try
 	while(rs.next())
 	{
 %>
-<td><%=rs.getInt(1) %></td>
-<td><%=rs.getString(2) %></td>
-<td><%=rs.getString(3) %></td>
-<td><%=rs.getString(4) %></td>
-<td><%=rs.getString(5) %></td>
-<td><%=rs.getString(6) %></td>
-<td><%=rs.getString(7) %></td>
-<td><%=rs.getString(8) %></td>
-<td><%=rs.getString(9) %></td>
-<td><a href="updateDonor.jsp?id=<%=rs.getString(1)%>">Edit</a></td>
-<td><a href="deleteDonor.jsp?id=<%=rs.getString(1)%>">Delete</a></td>
+<td style="color: black;"><%=rs.getInt(1) %></td>
+<td style="color: black;"><%=rs.getString(2) %></td>
+<td style="color: black;"><%=rs.getString(3) %></td>
+<td style="color: black;"><%=rs.getString(4) %></td>
+<td style="color: black;"><%=rs.getString(5) %></td>
+<td style="color: black;"><%=rs.getString(6) %></td>
+<td style="color: black;"><%=rs.getString(7) %></td>
+<td style="color: black;"><%=rs.getString(8) %></td>
+<td style="color: black;"><%=rs.getString(9) %></td>
+<td ><a style="color: black;" href="updateDonor.jsp?id=<%=rs.getString(1)%>">Edit</a></td>
+<td><a style="color: black;" href="deleteDonor.jsp?id=<%=rs.getString(1)%>">Delete</a></td>
 </tr>
 <%
 	}
@@ -117,6 +120,8 @@ catch(Exception e)
 </table>
 </center>
 
-<h3><center style="padding-top: 459px;color: white;font-size: 22px">All Right Reserved @Sweta Raj :: 2023  </center></h3>
+</div>
+
+<%@include file="AdminFooter.jsp" %>
 </body>
-</
+</html>

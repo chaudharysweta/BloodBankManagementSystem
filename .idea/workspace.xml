@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ea2d46b8-4928-455c-9529-34ebeb11157c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/Blood.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/Blood.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/Dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/Dashboard.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/addNewDonor.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/addNewDonor.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/adminLoginAction.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/adminLoginAction.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/displayImage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/donorList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/donorList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/editDeleteList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/editDeleteList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/header1.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/header1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/home1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/home1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/img/book.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/manageBloodRequest.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/manageBloodRequest.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/manageStock.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/manageStock.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/requestCompleted.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/requestCompleted.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/img/AddImage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/img/AddImage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/image2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/AddImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/AddImage.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2R0FWPEc4y03BHDeIwlIYzo4zwc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Dell 11/eclipse-workspace/PROJECTBLOOD",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea2d46b8-4928-455c-9529-34ebeb11157c" name="Changes" comment="" />
+      <created>1686379122910</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686379122910</updated>
+      <workItem from="1686379123945" duration="41000" />
+      <workItem from="1695728341692" duration="925000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

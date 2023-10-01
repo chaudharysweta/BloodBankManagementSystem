@@ -1,7 +1,7 @@
 
 <%@page import="Project.ConnectionProvider"%>
 <%@page import="java.sql.*"%>
-<%@include file="header.html"%>
+<%@include file="AdminHeader.jsp" %>
 <html>
 <head>
 <style>
@@ -15,6 +15,10 @@
   border: 1px solid #ddd;
   padding: 8px;
 }
+#customers td{
+color: black;
+font-size: 15px;
+}
 
 #customers tr:nth-child(even){background-color: #f2f2f2;}
 
@@ -25,8 +29,9 @@
   padding-bottom: 12px;
   text-align: left;
   background-color: #4CAF50;
-  color: white;
+  color: black;
 }
+
 body{
 background-image: linear-gradient(to right top, #034c55, #005f62, #007369, #008669, #029963);
 background-repeat: no-repeat;
@@ -36,7 +41,10 @@ background-repeat: no-repeat;
 </head>
 <body>
 <br>
+
 <center>
+<input type="text" name="" id="myInput" placeholder="names..."  onkeyup="searchFun()">
+
 <table id="customers">
 <tr>
 <th>Name</th>
@@ -54,7 +62,7 @@ try
 	while(rs.next())
 	{
 %>
-<td><%=rs.getString(1) %></td>
+<td ><%=rs.getString(1) %></td>
 <td><%=rs.getString(2) %></td>
 <td><%=rs.getString(3) %></td>
 <td><%=rs.getString(4) %></td>
@@ -70,7 +78,30 @@ catch(Exception e)
 </table>
 
 
-
+<script type="text/javascript">
+const searchFun = () => {
+	let filter = document.getElementById('myInput').value.toUpperCase();
+	
+	let myTable = document.getElementById('customers');
+	
+	let tr = myTable.getElementsByTagName('tr');
+	
+	for(var i=0; i<tr.length; i++){
+		let td = tr[i].getElementsByTagName('td')[3];
+		
+		if(td){
+			let textvalue = td.textContent || td.innerHTML;
+			
+			if(textvalue.toUpperCase().indexOf(filter) > -1){
+				tr[i].style.display="";
+			}
+			else{
+				tr[i].style.display="none";
+			}
+		}
+	}
+}
+</script>
 
 
 </center>
@@ -78,6 +109,6 @@ catch(Exception e)
 <br>
 <br>
 <br>
-<h3><center style="padding-top:240px; color: white;font-size: 22px">All Right Reserved @Sweta Raj :: 2023   </center></h3>
+<%@include file="AdminFooter.jsp" %>
 </body>
 </html>

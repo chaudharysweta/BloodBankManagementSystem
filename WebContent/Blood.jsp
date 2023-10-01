@@ -15,6 +15,7 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="blood.css">
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -30,7 +31,10 @@
 	crossorigin="anonymous"></script>
 	
 	<style type="text/css">
-	.bg-custom{
+	
+	
+	
+		.bg-custom{
 	
 background:#ff4081  ;
 }
@@ -69,7 +73,7 @@ background-size: cover;
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="Blood.jsp"><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="PROJECTBLOOD.html"><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
       </li>
       
       <li class="nav-item active" style="padding-left: 1100px">
@@ -91,6 +95,9 @@ background-size: cover;
 		<br>
 		<a href="login.jsp" class="btn btn-light mr-3"><i class="fa fa-user" aria-hidden="true"></i> Login</a>
 		<a href="register.jsp" class="btn btn-light"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</a>
+		
+		<br><br><br>
+		<h1 style="color: white; font-size: 30px;">Let's come together to save lives</h1>
 		</div>
 	</div>
 

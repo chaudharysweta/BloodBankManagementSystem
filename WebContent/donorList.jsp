@@ -1,7 +1,7 @@
 <%@page import="Project.ConnectionProvider" %>
 <%@page import="java.sql.*" %>
 
-<%@include file="header.html"%>
+
 <html>
 <head>
 <style>
@@ -35,10 +35,15 @@ background-repeat: no-repeat;
 </style>
 </head>
 <body>
-<br>
+	<%@include file="AdminHeader.jsp" %>
 
+<div style="padding-top: 2%;padding-bottom: 15%">
 
 <center>
+<input style="color: black;" type="text" name="" id="myInput" placeholder="names..."  onkeyup="searchFun()">
+
+
+
 <table id="customers">
 <tr>
 <th>Name</th>
@@ -50,9 +55,10 @@ background-repeat: no-repeat;
 <th>Blood Group</th>
 <th>Address</th>
 
+
 </tr>
 
-<tr>
+<tr >
 <%
 try
 {
@@ -62,14 +68,14 @@ try
 	while(rs.next())
 	{
 %>
-<td><%=rs.getString(1) %></td>
-<td><%=rs.getString(2) %></td>
-<td><%=rs.getString(3) %></td>
-<td><%=rs.getString(4) %></td>
-<td><%=rs.getString(5) %></td>
-<td><%=rs.getString(6) %></td>
-<td><%=rs.getString(7) %></td>
-<td><%=rs.getString(8) %></td>
+<td style="color: black;"><%=rs.getString(1) %></td>
+<td style="color: black;"><%=rs.getString(2) %></td>
+<td style="color: black;"><%=rs.getString(3) %></td>
+<td style="color: black;"><%=rs.getString(4) %></td>
+<td style="color: black;"><%=rs.getString(5) %></td>
+<td style="color: black;"><%=rs.getString(6) %></td>
+<td style="color: black;"><%=rs.getString(7) %></td>
+<td style="color: black;"><%=rs.getString(8) %></td>
 </tr>
 <%
 	}
@@ -82,11 +88,63 @@ catch(Exception e)
 
 
 </table>
+<script type="text/javascript">
+const searchFun = () => {
+	let filter = document.getElementById('myInput').value.toUpperCase();
+	
+	let myTable = document.getElementById('customers');
+	
+	let tr = myTable.getElementsByTagName('tr');
+	
+	for(var i=0; i<tr.length; i++){
+		let td = tr[i].getElementsByTagName('td')[5];
+		
+		if(td){
+			let textvalue = td.textContent || td.innerHTML;
+			
+			if(textvalue.toUpperCase().indexOf(filter) > -1){
+				tr[i].style.display="";
+			}
+			else{
+				tr[i].style.display="none";
+			}
+		}
+	}
+}
+</script>
 </center>
-<br>
-<br>
-<br>
-<br>
-<h3><center  style="padding-top:400px; color: white;font-size: 22px">All Right Reserved @Sweta Raj :: 2023  </center></h3>
+
+<script type="text/javascript">
+const searchFun = () => {
+    let filter = document.getElementById('myInput').value.toUpperCase();
+    let myTable = document.getElementById('customers');
+    let tr = myTable.getElementsByTagName('tr');
+    let nameCount = 0; // Initialize the name count variable
+
+    for (var i = 0; i < tr.length; i++) {
+        let tdEmail = tr[i].getElementsByTagName('td')[5]; // Column index for email
+
+        if (tdEmail) {
+            let emailText = tdEmail.textContent || tdEmail.innerHTML;
+
+            if (emailText.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+                // Increment the name count when the email matches the search filter
+                nameCount++;
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+    }
+
+    // Display the name count on the right side of the search input field
+    document.getElementById('countDiv').innerText = "Name Count: " + nameCount;
+}
+</script>
+
+
+</div>
+
+	<%@include file="AdminFooter.jsp" %>
 </body>
 </html>

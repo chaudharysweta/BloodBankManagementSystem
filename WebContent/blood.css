@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@media (min-width:500) and (max-width:700){ 
+
+home{
+	color: red;
+	background: yellow;
+	font-size: 100px;
+
+	}
+	
+
+
+}
